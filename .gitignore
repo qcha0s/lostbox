@@ -74,4 +74,6 @@ Intermediate/*
 # Cache files for the editor to use
 DerivedDataCache/*
 
+# Misc: ignoring starter content and TopDownExampleMap
 Content/StarterContent/*
+Content/TopDownBP/Maps/TopDownExampleMap.umap
