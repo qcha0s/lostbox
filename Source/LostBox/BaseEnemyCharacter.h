@@ -12,8 +12,6 @@ class LOSTBOX_API ABaseEnemyCharacter : public ACharacter
 	GENERATED_BODY()
 
 public:
-
-public:
 	// Sets default values for this character's properties
 	ABaseEnemyCharacter();
 	// Give our character some health 
