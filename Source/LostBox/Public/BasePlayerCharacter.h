@@ -9,22 +9,24 @@
 UCLASS()
 class LOSTBOX_API ABasePlayerCharacter : public ACharacter
 {
+
 	GENERATED_BODY()
-public:
+	
+	public:
 	// Sets default values for this character's properties
 	ABasePlayerCharacter();
 	// Give our character some health 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Base Characer")
-		float Health = 100;
+	float Health = 100;
 
 	//	 isDead Check
 	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category = "Base Character")
-		bool isDead = false;
+	bool isDead = false;
 	//  Calculate the Death Method
 	virtual void CalculateDead();
 	// Calculate The Characters Health Method
 	UFUNCTION(BluePrintCallable, Category = "Base Character")
-		virtual void CalculateHealth(float delta);
+	virtual void CalculateHealth(float delta);
 	// Make sure changes made in the editor are updated. 
 #if WITH_EDITOR
 	virtual void PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent) override;
@@ -41,6 +43,6 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
-	
+
 	
 };
