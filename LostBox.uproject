@@ -3,6 +3,7 @@
 	"EngineAssociation": "4.17",
 	"Category": "",
 	"Description": "",
+
 	"Modules": [
 		{
 			"Name": "LostBox",
@@ -12,6 +13,12 @@
 				"AIModule",
 				"Engine"
 			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "OnlineSubsystemSteam",
+			"Enabled": true
 		}
 	]
 }
